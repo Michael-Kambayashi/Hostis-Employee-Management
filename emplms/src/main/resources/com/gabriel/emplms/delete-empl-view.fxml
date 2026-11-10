@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="800.0" prefWidth="300.0" spacing="5.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gabriel.emplms.DeleteEmployeeController">
+	<padding>
+		<Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+	</padding>
+	<HBox prefHeight="30.0" prefWidth="200.0">
+	<Label alignment="CENTER" prefWidth="80.0" text="Id">
+	<padding>
+	<Insets left="10.0" />
+	</padding>
+	</Label>
+	<TextField fx:id="txtId" editable="false" prefWidth="200.0" >
+	<HBox.margin>
+	<Insets />
+	</HBox.margin>
+	</TextField>
+	<padding>
+	<Insets top="10.0" />
+	</padding>
+	</HBox>
+	<HBox prefHeight="30.0" prefWidth="200.0">
+		<Label alignment="CENTER" prefWidth="80.0" text="Firstname">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<TextField fx:id="txtFirstname" editable="false" prefWidth="200.0" />
+		<padding>
+			<Insets top="10.0" />
+		</padding>
+	</HBox>
+	<HBox prefHeight="30.0" prefWidth="200.0">
+		<Label alignment="CENTER" prefWidth="80.0" text="Lastname">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<TextField fx:id="txtLastname" editable="false" prefWidth="200.0" />
+		<padding>
+			<Insets top="10.0" />
+		</padding>
+	</HBox>
+	<HBox prefHeight="30.0" prefWidth="200.0">
+		<Label alignment="CENTER" prefWidth="80.0" text="Email">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<TextField fx:id="txtEmail" editable="false" prefWidth="200.0" />
+		<padding>
+			<Insets top="10.0" />
+		</padding>
+	</HBox>
+	<HBox prefHeight="30.0" prefWidth="200.0">
+		<Label alignment="CENTER" prefWidth="80.0" text="PhoneNumber">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<TextField fx:id="txtPhoneNumber" editable="false" prefWidth="200.0" />
+		<padding>
+			<Insets top="10.0" />
+		</padding>
+	</HBox>
+	<HBox prefHeight="30.0" prefWidth="200.0">
+		<Label alignment="CENTER" prefWidth="80.0" text="HireDate">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<DatePicker fx:id="dtHireDate" editable="false" prefWidth="200.0" />
+		<padding>
+			<Insets top="10.0" />
+		</padding>
+	</HBox>
+	<HBox prefHeight="30.0" prefWidth="200.0">
+		<Label alignment="CENTER" prefWidth="80.0" text="Job">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<StackPane prefHeight="150.0" prefWidth="200.0">
+			<children>
+				<ComboBox fx:id="cmbJob" prefWidth="200.0" />
+				<TextField fx:id="txtJobName" editable="false" prefWidth="150.0"/>
+			</children>
+		</StackPane>
+		<padding>
+			<Insets top="10.0" />
+		</padding>
+	</HBox>
+	<HBox prefHeight="30.0" prefWidth="200.0">
+		<Label alignment="CENTER" prefWidth="80.0" text="Department">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<StackPane prefHeight="150.0" prefWidth="200.0">
+			<children>
+				<ComboBox fx:id="cmbDepartment" prefWidth="200.0" />
+				<TextField fx:id="txtDepartmentName" editable="false" prefWidth="150.0"/>
+			</children>
+		</StackPane>
+		<padding>
+			<Insets top="10.0" />
+		</padding>
+	</HBox>
+	<HBox prefHeight="30.0" prefWidth="200.0">
+		<Label alignment="CENTER" prefWidth="80.0" text="Manager">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<StackPane prefHeight="150.0" prefWidth="200.0">
+			<children>
+				<ComboBox fx:id="cmbManager" prefWidth="200.0" />
+				<TextField fx:id="txtManagerName" editable="false" prefWidth="150.0"/>
+			</children>
+		</StackPane>
+		<padding>
+			<Insets top="10.0" />
+		</padding>
+	</HBox>
+	<HBox prefHeight="30.0" prefWidth="200.0">
+		<Label alignment="CENTER" prefWidth="80.0" text="Gender">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<StackPane prefHeight="150.0" prefWidth="200.0">
+			<children>
+				<ComboBox fx:id="cmbGender" prefWidth="200.0" />
+				<TextField fx:id="txtGenderName" editable="false" prefWidth="150.0"/>
+			</children>
+		</StackPane>
+		<padding>
+			<Insets top="10.0" />
+		</padding>
+	</HBox>
+	<HBox prefHeight="30.0" prefWidth="200.0">
+		<Label alignment="CENTER" prefWidth="80.0" text="Status">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<StackPane prefHeight="150.0" prefWidth="200.0">
+			<children>
+				<ComboBox fx:id="cmbStatus" prefWidth="200.0" />
+				<TextField fx:id="txtStatusName" editable="false" prefWidth="150.0"/>
+			</children>
+		</StackPane>
+		<padding>
+			<Insets top="10.0" />
+		</padding>
+	</HBox>
+	<HBox prefHeight="30.0" prefWidth="200.0">
+		<Label alignment="CENTER" prefWidth="80.0" text="Address">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<TextField fx:id="txtAddress" editable="false" prefWidth="200.0" />
+		<padding>
+			<Insets top="10.0" />
+		</padding>
+	</HBox>
+	<HBox prefHeight="30.0" prefWidth="200.0">
+		<Label alignment="CENTER" prefWidth="80.0" text="Country">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<TextField fx:id="txtCountry" editable="false" prefWidth="200.0" />
+		<padding>
+			<Insets top="10.0" />
+		</padding>
+	</HBox>
+	<HBox prefHeight="30.0" prefWidth="200.0">
+		<Label alignment="CENTER" prefWidth="80.0" text="State">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<TextField fx:id="txtState" editable="false" prefWidth="200.0" />
+		<padding>
+			<Insets top="10.0" />
+		</padding>
+	</HBox>
+	<HBox prefHeight="30.0" prefWidth="200.0">
+		<Label alignment="CENTER" prefWidth="80.0" text="City">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<TextField fx:id="txtCity" editable="false" prefWidth="200.0" />
+		<padding>
+			<Insets top="10.0" />
+		</padding>
+	</HBox>
+	<HBox prefHeight="30.0" prefWidth="200.0">
+		<Label alignment="CENTER" prefWidth="80.0" text="DateOfBirth">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<DatePicker fx:id="dtDateOfBirth" editable="false" prefWidth="200.0" />
+		<padding>
+			<Insets top="10.0" />
+		</padding>
+	</HBox>
+	<HBox prefHeight="30.0" prefWidth="200.0">
+		<Label alignment="CENTER" prefWidth="80.0" text="Salary">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<TextField fx:id="txtSalary" editable="false" prefWidth="200.0" />
+		<padding>
+			<Insets top="10.0" />
+		</padding>
+	</HBox>
+	<HBox layoutX="30.0" layoutY="297.0" prefHeight="30.0" prefWidth="200.0" spacing="19.0">
+		<children>
+			<Button fx:id="btnBack" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onBack" text="&lt;&lt; Back" />
+			<Button fx:id="btnUpdate" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onSubmit" text="Submit" />
+			<Button fx:id="btnClose" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onClose" text="Close" />
+		</children>
+	</HBox>
+</VBox>
