@@ -33,7 +33,7 @@ Hostis provides operations for managing employees and related reference records.
 flowchart LR
     UI[JavaFX desktop client] -->|HTTP / JSON| API[Spring Boot REST API]
     API -->|Spring Data JPA| DB[(MySQL database)]
-    USER[Postman or curl] -->|HTTP / JSON| API
+    USER[Postman] -->|HTTP / JSON| API
 ```
 
 The JavaFX client and the backend are **different applications**. The Docker Compose setup starts the **backend and MySQL database**; it does not launch the desktop interface.
