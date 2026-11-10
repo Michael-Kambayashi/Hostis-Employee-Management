@@ -25,7 +25,7 @@ Hostis provides operations for managing employees and related reference records.
 | Desktop UI | JavaFX, FXML |
 | Build | Maven (multi-module project) |
 | Local deployment | Docker, Docker Compose |
-| API testing | Postman or curl |
+| API testing | Postman |
 
 ## Architecture
 
